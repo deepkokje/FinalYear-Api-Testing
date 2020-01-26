@@ -18,32 +18,6 @@ app.get('/hello-news', (req, res) => {
 });
 
 
-//Read author
-
-// app.get('/fetch-Author', (req, res) => {
-//   (async () => {
-//       try {
-//           let query = db.collection('Articles');
-
-//           let response = [];
-//           await query.get().then(querySnapshot => {
-//           let docs = querySnapshot.docs;
-//           // eslint-disable-next-line promise/always-return
-//           for (let doc of docs) {
-//               const selectedNews = {
-//                   id: doc.id,
-//                   Author: doc.data().Author
-//               };
-//               response.push(selectedNews);
-//           }
-//           });
-//           return res.status(200).send(response);
-//       } catch (error) {
-//           console.log(error);
-//           return res.status(500).send(error);
-//       }
-//       })();
-//   });
 
   //read News
   app.get('/fetch-News', (req, res) => {
